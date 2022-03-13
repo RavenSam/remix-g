@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+   .h1 {
+      @apply text-3xl lg:text-4xl  capitalize font-bold;
+   }
+
+   .h2 {
+      @apply text-2xl md:text-[28px] font-bold py-4 mb-4 capitalize;
+   }
+
+   .h3 {
+      @apply text-xl md:text-2xl font-semibold capitalize;
+   }
+
+   .h4 {
+      @apply text-lg md:text-xl capitalize;
+   }
+
+   .btn {
+      @apply text-sm lg:text-base uppercase font-semibold px-5 md:px-8 py-2 rounded-xl focus:ring-2 focus:ring-blue-500 cursor-pointer disabled:opacity-50 disabled:pointer-events-none;
+   }
+
+   .btn-1 {
+      @apply btn bg-black text-white transition-all duration-200 ease-in-out  hover:opacity-80 active:scale-90;
+   }
+
+   .btn-2 {
+      @apply btn border border-black transition-all duration-200 ease-in-out md:hover:tracking-[.2rem] active:scale-90;
+   }
+
+   .btn-3 {
+      @apply btn capitalize bg-gray-200  transition-all duration-200 ease-in-out hover:bg-black hover:text-white active:scale-90;
+   }
+
+   .btn-t {
+      @apply inline-block capitalize tracking-wider font-semibold bg-white text-white shadow-sm bg-opacity-20 py-2 px-4 rounded-xl  hover:bg-opacity-40;
+   }
+
+   .btn-rounded {
+      @apply w-10 h-10 text-xl font-semibold border border-gray-300 text-gray-600 rounded-full transform  transition duration-100 ease-in-out hover:bg-black hover:text-white hover:border-black active:scale-90;
+   }
+
+   .input {
+      @apply bg-gray-200 text-black px-4 py-2 rounded-xl  focus:outline-none border border-gray-300 focus:border-blue-500;
+   }
+
+   .input-1 {
+      @apply bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-xl  focus:border-blue-500  block w-full p-2.5;
+   }
+}
